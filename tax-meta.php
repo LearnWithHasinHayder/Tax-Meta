@@ -83,3 +83,6 @@ function taxm_update_category_meta( $term_id ) {
 
 }
 add_action( 'edit_post_tag', 'taxm_update_category_meta' );
+
+add_shortcode('myshortcode','prefix_callback_function');
+add_shortcode('myshortcode',array($this,'prefix_not_needed_callback_function'));
